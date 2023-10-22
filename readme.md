@@ -29,7 +29,7 @@ Experimente o projeto em seu navegador.
 <img src="https://img.shields.io/github/issues-pr-raw/Willy-Braga/Pokedex?style=social">
 <img src="https://img.shields.io/github/issues-closed/willy-braga/Pokedex?style=social">
 
-## [Link do Projeto](https://github.com/Willy-Braga/Pokedex)
+## [Link do Projeto](https://willy-braga.github.io/Pokedex/)
 
 ### Linguagens e Ferramentas
 
@@ -43,12 +43,12 @@ Experimente o projeto em seu navegador.
 
 ### Desktop
 
-<a href="https://github.com/Willy-Braga/Pokedex" target='_blank'>
+<a href="https://willy-braga.github.io/Pokedex/" target='_blank'>
 <img src="src/designs/desktop-desing.gif"/>
 </a>
 
 ### Mobile
-<a href="https://github.com/Willy-Braga/Pokedex" target='_blank'>
+<a href="https://willy-braga.github.io/Pokedex/" target='_blank'>
 <img src="src/designs/mobile-design.gif" />
 </a>
 
