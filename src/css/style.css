@@ -1,0 +1,272 @@
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+    background: url(../images/plano-de-fundo/por-do-sol.jpg)  repeat center center;
+    background-size: cover;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+}
+
+body .modo-escuro{
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+header .logo{
+    width: 350px;
+    transition: 0.2s ease-in-out;
+    height: 185px;
+}
+
+header .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .imagem-botao{
+    width: 45px;
+    margin-left: 30px;
+    transition: 0.2s ease-in-out;
+}
+header .barra-pesquisa{
+    color: #FFFFE0;
+    padding: 8px;
+    width: 350px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(148,0,211, 2);
+    transition: 0.2s ease-in-out;
+    margin-left: 60px;
+}
+
+.barra-pesquisa::placeholder {
+    text-align: center;
+    color: #FAFAD2; 
+}
+
+header .barra-pesquisa:hover{
+    transform: scale(1.1);
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover, header .imagem-botao:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+main .listagem-pokemon{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+main .cartao-pokemon{
+    background: url(../images/plano-de-fundo/Ceu-azul-com-nuvens.jpg)  repeat center center;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    color: #FFFF00;
+    box-shadow: 0 0 10px rgba(176,224,230, 0.9);
+    text-transform: capitalize;
+}
+
+main .cartao-pokemon:hover{
+    background-color: #96d9d6;
+    box-shadow: 0 0 60px rgba(176,224,230, 0.9);
+
+}
+
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #000080	;
+    gap: 15px;
+    padding: 5px;
+    border-radius: 17px;
+    text-transform: capitalize;
+    font-size: 17px;
+    box-shadow: 0 0 10px rgba(0,0,139, 0.9);
+
+}
+
+main .cartao-pokemon .poke-number {
+    color: #fff;
+    
+}
+
+main .cartao-pokemon .descricao{
+    filter:contrast(800%);
+    font-weight: 800;
+    color: #1C1C1C	;   
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .types{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.poke-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.pagination button{
+    background: url(../images/plano-de-fundo/universo.jpg);
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    padding: .25rem .5rem;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+}
+
+/* .grass{
+background: url(../images/poke-elements/Grass.png) center center;
+
+    
+}
+
+.poison{
+    background: url(../images/elemento/veneno.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(139,0,139, 0.9);
+}
+
+.fire{
+    background: url(../images/elemento/fogo.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(255,0,0, 0.9);
+}
+
+.flying{
+    background: url(../images/elemento/voador.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(105,105,105, 0.9);
+}
+
+.water{
+    background: url(../images/elemento/agua.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(0,0,255, 0.9);
+}
+
+.bug{
+    background: url(../images/elemento/inseto.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(128,128,0, 0.9);
+}
+
+.dragon{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.electric{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.fairy{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.fighting{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.ghost{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.ground{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.ice{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.normal{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.psychic{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.rock{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+}
+.steel{
+    background: url(../images/elemento/normal.jpg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
+} */
+
+
