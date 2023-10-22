@@ -1,0 +1,29 @@
+.modo-escuro{
+    background: url(../images/plano-de-fundo/fundo-universo3.jpg) repeat center center;
+    background-size: cover;
+    width: 1280px;
+} 
+
+.modo-escuro .cartao-pokemon{
+    background: url(../images/plano-de-fundo/universo.jpg) no-repeat center center;
+    color: #FFD700	;
+}
+
+
+.modo-escuro .cartao-pokemon .informacoes{
+    box-shadow: 0 0 10px rgba(64,224,208, 0.9); 
+    color: #48D1CC	;
+}
+
+
+.modo-escuro .cartao-pokemon .descricao{
+    filter:contrast(800%);
+    font-weight: 800;
+    color: #FFEFD5	;   
+}
+
+
+.modo-escuro .cartao-pokemon .tipo{
+    font-weight: 500;
+    color: #FFC0CB	;   
+}
