@@ -22,14 +22,14 @@ O projeto é um exemplo de como integrar uma API a um site ou aplicativo.
 Que você aprenda a integrar APIs com seus projetos.<br>
 Que você aproveite este projeto como um exemplo para seus próprios projetos.
 
-Baixe o código do projeto aqui: https://github.com/[seu-nome]/[nome-do-projeto]. <br><br>
+Baixe o código do projeto aqui: https://github.com/Willy-Braga/Pokedex. <br><br>
 Experimente o projeto em seu navegador.
 
-<img src="https://img.shields.io/github/stars/Willy-Braga/calculadoraSimplesJS?style=social">
-<img src="https://img.shields.io/github/issues-pr-raw/Willy-Braga/calculadoraSimplesJS?style=social">
-<img src="https://img.shields.io/github/issues-closed/willy-braga/CaWilly-Braga/calculadoraSimplesJS?style=social">
+<img src="https://img.shields.io/github/stars/Willy-Braga/Pokedex?style=social">
+<img src="https://img.shields.io/github/issues-pr-raw/Willy-Braga/Pokedex?style=social">
+<img src="https://img.shields.io/github/issues-closed/willy-braga/Pokedex?style=social">
 
-## [Link do Projeto](https://willy-braga.github.io/To-do-List/)
+## [Link do Projeto](https://github.com/Willy-Braga/Pokedex)
 
 ### Linguagens e Ferramentas
 
@@ -43,12 +43,12 @@ Experimente o projeto em seu navegador.
 
 ### Desktop
 
-<a href="https://willy-braga.github.io/To-do-List/" target='_blank'>
+<a href="https://github.com/Willy-Braga/Pokedex" target='_blank'>
 <img src="src/designs/desktop-desing.gif"/>
 </a>
 
 ### Mobile
-<a href="https://willy-braga.github.io/To-do-List/" target='_blank'>
+<a href="https://github.com/Willy-Braga/Pokedex" target='_blank'>
 <img src="src/designs/mobile-design.gif" />
 </a>
 
