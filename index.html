@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Listagem</title>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/scrolbar.css">
+    <link rel="stylesheet" href="src/css/modo-escuro.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    
+    <!-- JS -->
+    <script defer src="src/js/pokeApi.js"></script>
+    <script defer src="src/js/pokeModel.js"></script>
+    <script defer src="src/js/script.js"></script>
+    <script defer src="src/js/index.js"></script>
+</head>
+<body class="">
+    <header>
+        <a href="#">
+            <img src="src/images/Pokemon-Logo2.png" alt="pokebola" class="logo">
+        </a>
+
+        
+        <div class="btn">
+                <input type="text" class="barra-pesquisa" id="input" placeholder="Digite para pesquisar..." onkeyup="elementsFilter()">
+            <button id="botao-alterar-tema">
+                <img src="src/images/sun.png" alt="imagem do sol" class="imagem-botao">
+            </button>
+        </div>
+        
+    
+    </header>
+    <main>
+        <ul class="listagem-pokemon carta" id="poke-list">
+        </ul>
+
+        <div class="pagination">
+            <button id="loadMoreBtn" type="button">
+                Veja Mais
+            </button>
+        </div>
+    </main>
+</body>
+</html>
