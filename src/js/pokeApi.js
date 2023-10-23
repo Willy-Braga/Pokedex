@@ -1,6 +1,7 @@
 
 const pokeApi = {}
 
+// Convertendo esse detalhes
 async function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
 
@@ -21,9 +22,13 @@ async function convertPokeApiDetailToPokemon(pokeDetail) {
 
     pokemon.description = description.flavor_text_entries[1].flavor_text;
 
+    // Insere a pesquisa no retorno do Pokémon
+    pokemon.search = input.value;
+
     return pokemon
 }
 
+// Pegando os Detalhes dos pokemons
 pokeApi.getPokemonDetail = (pokemon) => {
     return fetch(pokemon.url)
             .then((response) => response.json())
@@ -44,6 +49,7 @@ pokeApi.getPokemons = (offset = 0, limit = 6) => {
 
 }
 
+// Pegando a descrição do pokemon e devolvendo JSON
 pokeApi.pokeDescription = (pokemon) => {
     const UrlAPIDescription = `https://pokeapi.co/api/v2/pokemon-species/${pokemon}`
     
@@ -52,3 +58,9 @@ pokeApi.pokeDescription = (pokemon) => {
             .then((response) => response.json());
 };
 
+// Buscando um pokemon na API
+pokeApi.searchPokemon = async (pokemon) => {
+    const APiResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+    const data = await APiResponse.json();
+    return data
+};
