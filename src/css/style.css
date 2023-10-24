@@ -81,8 +81,8 @@ main .listagem-pokemon{
 
 main .cartao-pokemon:hover{
     transform: scale(1.05);
-    cursor: pointer;
 }
+
 main .cartao-pokemon{
     background: url(../images/plano-de-fundo/Ceu-azul-com-nuvens.jpg)  repeat center center;
     width: 200px;
@@ -176,97 +176,3 @@ main .descricao{
     height: 50px;
     font-weight: 700;
 }
-
-/* .grass{
-background: url(../images/poke-elements/Grass.png) center center;
-
-    
-}
-
-.poison{
-    background: url(../images/elemento/veneno.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(139,0,139, 0.9);
-}
-
-.fire{
-    background: url(../images/elemento/fogo.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(255,0,0, 0.9);
-}
-
-.flying{
-    background: url(../images/elemento/voador.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(105,105,105, 0.9);
-}
-
-.water{
-    background: url(../images/elemento/agua.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(0,0,255, 0.9);
-}
-
-.bug{
-    background: url(../images/elemento/inseto.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(128,128,0, 0.9);
-}
-
-.dragon{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.electric{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.fairy{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.fighting{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.ghost{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.ground{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.ice{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.normal{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.psychic{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.rock{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-}
-.steel{
-    background: url(../images/elemento/normal.jpg) no-repeat center center;
-    background-size: cover;
-    box-shadow: 0 0 15px rgba(47,79,79, 0.9);
-} */
-
-
