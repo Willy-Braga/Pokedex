@@ -1,20 +1,16 @@
 const pokeList = document.getElementById('poke-list');
-const form = document.getElementById('form');
+const form = document.querySelector('#form');
 const input = document.getElementById('input');
-const description = document.querySelectorAll('#description');
 const maxRecords = 1017;
-const limit = 20;
+const limit = 2;
 let offset = 0;
 
-
-
-// Renderizando os dados do pokemon e imprimindo na tela
+    // Renderizando os dados do pokemon e imprimindo na tela
 function loadPokemonItens(offset, limit) {
 
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
     
-        // Metodo simplificado
-        const newHtml = pokemons.map((pokemon) =>`
+        let newHtml = pokemons.map((pokemon) =>`
         <li class="cartao-pokemon">
         
             <div class="informacoes">
@@ -25,17 +21,59 @@ function loadPokemonItens(offset, limit) {
             <img src="${pokemon.photo}" alt="${pokemon.name}" class="gif">
 
             <ul class="types">
-                ${pokemon.types.map((type) => `<li class="type ${type}"><img src="src/images/poke-elements/${type}.png" alt="${pokemon.name}" class="poke-img"></li>`).join('')}
+                ${pokemon.types.map((type) => `<li class="type ${type}"><img src="src/images/poke-elements/${type}.png" alt="${type}" class="poke-img"></li>`).join('')}
             </ul>
 
-            <p class="descricao" id="description">${pokemon.description}</p>
+            <p class="descricao">${pokemon.description}</p>
         </li>`
         ).join('');
 
+        pokeList.innerHTML += newHtml;
 
+        // Pesquisa pokemons pela api e imprime na tela
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
 
-        //Substituindo o HTML
-        pokeList.innerHTML += newHtml; 
+            const searchPokemon = input.value.toLowerCase();
+
+            // Obtém o Pokémon do retorno da API
+            const pokemon = await pokeApi.searchPokemon(searchPokemon);
+            
+            // Verifica se o Pokémon existe
+            if (!pokemon) {
+
+                alert('O Pokémon não existe. Por favor insira um pokemon valido.');
+            
+            } else{
+            
+                // Adiciona o Pokémon ao newHtml
+                const pokemonHtml = `
+                <li class="cartao-pokemon">
+
+                    <div class="informacoes">
+                        <span>${pokemon.name}</span>
+                        <span class="poke-number">#${pokemon.number}</span>
+                    </div>
+
+                    <img src="${pokemon.photo}" alt="${pokemon.name}" class="gif">
+
+                    <ul class="types">
+                        ${pokemon.types.map((type) => `<li class="type ${type}"><img src="src/images/poke-elements/${type}.png" alt="${type}" class="poke-img"></li>`).join('')}
+                    </ul>
+
+                    <p class="descricao" id="description">${pokemon.description}</p>
+                </li>`;
+
+                // Subistitui o HTML do Pokémon pesquisado ao HTML existente
+                newHtml = pokemonHtml;
+
+            };
+
+                input.value = " ";
+
+                // Substitui o HTML
+                pokeList.innerHTML = newHtml;   
+        });
     });
 }
 
@@ -60,7 +98,8 @@ loadMoreBtn.addEventListener('click', () => {
 
 })
 
-// Pesquisa de pokemons
+
+// Pesquisa de pokemons na página
 function elementsFilter() {
     let input = document.getElementById('input');
     let filter = input.value.toUpperCase();
@@ -76,4 +115,3 @@ function elementsFilter() {
         }
         }
 }
-

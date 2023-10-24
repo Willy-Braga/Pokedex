@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-bt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,13 +28,15 @@
 </head>
 <body class="">
     <header>
-        <a href="#">
+        <a href="#" onclick="location.reload()">
             <img src="src/images/Pokemon-Logo2.png" alt="pokebola" class="logo">
         </a>
 
         
         <div class="btn">
-                <input type="text" class="barra-pesquisa" id="input" placeholder="Digite para pesquisar..." onkeyup="elementsFilter()">
+            <form id="form" aria-required="true">
+                <input type="search" class="barra-pesquisa" id="input" placeholder="Digite para pesquisar..." onkeyup="elementsFilter()" required >
+            </form>
             <button id="botao-alterar-tema">
                 <img src="src/images/sun.png" alt="imagem do sol" class="imagem-botao">
             </button>
