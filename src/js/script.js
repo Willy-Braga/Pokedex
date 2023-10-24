@@ -2,7 +2,7 @@ const pokeList = document.getElementById('poke-list');
 const form = document.querySelector('#form');
 const input = document.getElementById('input');
 const maxRecords = 1017;
-const limit = 2;
+const limit = 20;
 let offset = 0;
 
     // Renderizando os dados do pokemon e imprimindo na tela
